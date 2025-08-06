@@ -10,6 +10,6 @@ public class CharacterOccurenceInString {
 
     public static void main(String[] args) {
         String str = "abcaprtarsopu";
-        str.chars().mapToObj(ch -> (char) ch).collect(Collectors.groupingBy(Function.identity(),Collectors.counting())).entrySet().stream().forEach(System.out::println);
+        str.chars().mapToObj(ch -> (char) ch).collect(Collectors.groupingBy(Function.identity(),Collectors.counting())).entrySet().forEach(System.out::println);
     }
 }
